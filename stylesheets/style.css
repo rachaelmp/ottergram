@@ -2,9 +2,9 @@
     font-family: 'lakeshore';
     src: url('fonts/LAKESHOR-webfont.eot');
     src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/LAKESHOR-webfont.woff') format('woff'),
-         url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
-         url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+        url('fonts/LAKESHOR-webfont.woff') format('woff'),
+        url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
+        url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,14 +13,15 @@
     font-family: 'airstreamregular';
     src: url('fonts/Airstream-webfont.eot');
     src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Airstream-webfont.woff') format('woff'),
-         url('fonts/Airstream-webfont.ttf') format('truetype'),
-         url('fonts/Airstream-webfont.svg#airstreamregular') format('svg');
+        url('fonts/Airstream-webfont.woff') format('woff'),
+        url('fonts/Airstream-webfont.ttf') format('truetype'),
+        url('fonts/Airstream-webfont.svg#airstreamregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -82,7 +83,7 @@ a [href="#"] {
     margin: 0;
     padding: 4px 10px;
     background: rgb(96, 125, 139);
-    color:rgb(202, 238, 255);
+    color: rgb(202, 238, 255);
     font-size: 18px;
 }
 
