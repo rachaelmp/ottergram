@@ -28,6 +28,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
+
     font-size: 10px;
     background: rgb(149, 194, 215);
 }
@@ -37,15 +38,7 @@ a [href="#"] {
 }
 
 .main-header {
-    flex: 0 1 auto;
-}
-
-.logo-text {
-    background: white;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: lakeshore;
-    font-size: 37px;
+    flex: 1 1 auto;
 }
 
 .main-content {
@@ -54,12 +47,27 @@ a [href="#"] {
     flex-direction: column;
 }
 
+.logo-text {
+    background: white;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-family: lakeshore;
+    font-size: 37px;
+}
+
 .thumbnail-item {
     display: inline-block;
     min-width: 120px;
     max-width: 120px;
     border: 1px solid #ffffff;
     border: 1px solid #ffffffcc;
+
+    transition: transform 133ms ease-in-out;
+}
+
+.thumbnail-item:hover {
+    transform: scale(1.2);
 }
 
 .thumbnail-list {
@@ -69,6 +77,7 @@ a [href="#"] {
     justify-content: space-between;
     list-style: none;
     padding: 0;
+
     white-space: nowrap;
     overflow-x: auto;
 }
@@ -82,8 +91,10 @@ a [href="#"] {
     display: block;
     margin: 0;
     padding: 4px 10px;
+
     background: rgb(96, 125, 139);
     color: rgb(202, 238, 255);
+
     font-size: 18px;
 }
 
@@ -97,6 +108,8 @@ a [href="#"] {
 .detail-image-frame {
     position: relative;
     text-align: center;
+
+    transition: transform 333ms;
 }
 
 .detail-image {
@@ -107,8 +120,48 @@ a [href="#"] {
     position: absolute;
     bottom: -16px;
     left: 4px;
+
     font-family: airstreamregular;
     color: white;
-    text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
+    text-shadow: rgba(0, 0, 0, 0.9) 4px 8px 2px;
     font-size: 40px;
+}
+
+.is-tiny {
+    transition: scale(0.001);
+    transition: transform 0ms;
+}
+
+.hidden-detail .detail-image-container {
+    display: none;
+}
+
+.hidden-detail .thumbnail-list {
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden-detail .thumbnail-item {
+    max-width: 80%;
+}
+
+.btn {
+    background-color: rgb(24, 50, 80);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+
+    transition: transform 133ms ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.9) 5px 5px 8px;
+
+    transform: scale(1.1);
 }
